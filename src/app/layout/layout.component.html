@@ -1,10 +1,72 @@
-<nav class="navbar navbar-light bg-light">
+<nav class="navbar navbar-light navbar-dark bg-dark fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar</a>
     <div class="ml-auto">
-      <button class="btn">
+      <button class="btn text-light" [ngbPopover]="popContent" [popoverTitle]="popTitle">
         <i class="fa fa-cog fa-fw"></i>
       </button>
     </div>
   </div>
 </nav>
+
+<ng-template #popTitle>
+  Tamaño de letra
+</ng-template>
+<ng-template #popContent>
+  <div class="d-flex">
+    <button type="button" class="btn btn-primary btn-sm mr-2">
+      <i class="fa fa-font fa-fw"></i>
+    </button>
+    <button type="button" class="btn btn-primary mr-2">
+      <i class="fa fa-font fa-fw"></i>
+    </button>
+    <button type="button" class="btn btn-primary btn-lg">
+      <i class="fa fa-font fa-fw"></i>
+    </button>
+  </div>
+</ng-template>
+
+<div class="container layout-body">
+  <h1>Título H1</h1>
+  <h2>Título H2</h2>
+  <h3>Título H3</h3>
+  <h4>Título H4</h4>
+  <h5>Título H5</h5>
+  <h6>Título H6</h6>
+
+  <hr>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pellentesque quam in velit vulputate blandit.
+    Mauris in urna ligula. Aliquam metus elit, vehicula sit amet metus vel, consequat interdum quam. Praesent eu est sit
+    amet arcu tempus dapibus. Quisque ac aliquet mi, vitae bibendum libero. Donec porta est est, vel scelerisque mauris
+    egestas in. Phasellus id neque auctor, consectetur mi vitae, commodo sem. Ut leo mauris, porta eu egestas ac,
+    pellentesque in eros. Quisque aliquam urna at varius pulvinar. Vivamus accumsan molestie eleifend. Maecenas blandit
+    felis quis odio finibus fermentum nec non est. Aenean orci nisl, dapibus et risus vitae, rhoncus interdum augue.</p>
+
+  <p>Nulla venenatis mi at congue ultrices. Maecenas ac metus semper, interdum elit eu, sodales nisl. Vestibulum
+    viverra, erat eu ornare finibus, tortor turpis pulvinar nibh, quis mollis nisl nunc vel risus. Phasellus quis metus
+    diam. Ut lobortis nunc id quam varius, sit amet feugiat sem tempor. Nullam velit erat, eleifend a scelerisque sed,
+    congue et lectus. Sed convallis libero a bibendum auctor. Nunc mauris ligula, vulputate at arcu aliquam, accumsan
+    dictum ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas volutpat erat vel justo facilisis
+    euismod. Nam a vestibulum ex, quis consectetur urna.</p>
+
+  <p>Etiam feugiat, nisi non volutpat fringilla, turpis ex euismod mi, cursus euismod lacus urna vel ligula. Aliquam
+    erat volutpat. Pellentesque sem metus, malesuada eget ipsum at, condimentum bibendum erat. Aenean ullamcorper arcu
+    felis, sodales facilisis arcu faucibus non. Quisque vitae egestas orci. In ultrices sem quis libero lobortis
+    vehicula. Quisque cursus diam nec arcu blandit, ac suscipit metus rutrum. Nunc facilisis euismod lorem imperdiet
+    tincidunt. In hac habitasse platea dictumst. Integer pulvinar enim sed eros egestas, sit amet sagittis eros mollis.
+    Morbi placerat vulputate erat, in interdum nisi ultricies quis.</p>
+
+  <p>Nullam at orci et arcu interdum porttitor bibendum a magna. Aliquam sem diam, vulputate eget auctor vitae, posuere
+    at diam. Phasellus non condimentum urna. Sed et viverra felis, et imperdiet odio. Nam non risus nec mi mattis
+    lobortis. Etiam blandit aliquam felis, fermentum tincidunt sapien vestibulum sollicitudin. Morbi suscipit molestie
+    tortor, sit amet dictum sapien commodo non. Aenean nec leo id dui porta commodo. Ut sed sagittis ex, et pharetra
+    turpis. Quisque interdum, ipsum eget hendrerit elementum, lorem justo commodo ligula, nec pellentesque risus urna et
+    nibh. Morbi mattis tellus eu cursus condimentum.</p>
+
+  <p>Vestibulum vestibulum venenatis felis at vehicula. Maecenas sagittis nunc tellus, in sagittis dolor lobortis ut.
+    Etiam quis nisl at orci dictum fermentum. Phasellus eget metus non risus cursus luctus a ac elit. Nullam at ante
+    venenatis, imperdiet lacus at, mollis ex. Phasellus consectetur semper ex non lacinia. Vivamus vitae tristique nibh.
+    Mauris sagittis, nisl sit amet maximus consequat, massa est malesuada felis, vitae molestie libero elit quis lacus.
+    Vestibulum laoreet bibendum feugiat.</p>
+</div>

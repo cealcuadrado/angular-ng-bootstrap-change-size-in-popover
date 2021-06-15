@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LayoutComponent implements OnInit {
 
+  nivelActual = 2;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  cambiarNivelActual(n: number): void {
+    this.nivelActual = n;
   }
 
 }
