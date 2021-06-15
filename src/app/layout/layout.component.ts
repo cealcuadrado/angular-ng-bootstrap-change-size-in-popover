@@ -18,4 +18,12 @@ export class LayoutComponent implements OnInit {
     this.nivelActual = n;
   }
 
+  obtenerNivelActual(): string {
+    return `nivel-${this.nivelActual}`;
+  }
+
+  resetearNivel(): void {
+    this.nivelActual = 2;
+  }
+
 }
